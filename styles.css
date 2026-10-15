@@ -3,6 +3,7 @@
   --color-muted: #5c7063;
   --color-border: #d9e5da;
   --color-page: #f3f7f2;
+  --color-shape: #dce9dc;
   --color-surface: #ffffff;
   --color-surface-soft: #eaf2e9;
   --color-accent: #3e7050;
@@ -10,7 +11,16 @@
   color-scheme: light;
   font-family: Arial, sans-serif;
   color: var(--color-ink);
-  background: var(--color-page);
+  background-color: var(--color-page);
+  background-image:
+    linear-gradient(135deg, transparent 48%, var(--color-shape) 49% 100%),
+    radial-gradient(circle, var(--color-shape) 0 50%, transparent 52%),
+    linear-gradient(45deg, var(--color-shape) 0 50%, transparent 51%),
+    linear-gradient(135deg, transparent 48%, var(--color-shape) 49% 100%);
+  background-position: 4% 170px, calc(100% - 7%) 46%, calc(100% - 19%) 90%, 8% 88%;
+  background-repeat: no-repeat;
+  background-size: 110px 110px, 130px 130px, 90px 90px, 72px 72px;
+  background-attachment: fixed;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -289,7 +299,7 @@ h1 {
   aspect-ratio: 9 / 20;
   border: 1px solid var(--color-border);
   border-radius: 0.75rem;
-  background: var(--color-ink);
+  background: var(--color-surface-soft);
   object-fit: contain;
 }
 
