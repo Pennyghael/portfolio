@@ -26,10 +26,41 @@
         <p class="eyebrow">Sélection</p>
         <h2 id="projects-title">Mes projets</h2>
         <div class="project-list">
-          <article class="project-card">
-            <p class="project-status">Projet 1</p>
-            <h3>À compléter</h3>
-            <p>Une description de ton premier projet sera ajoutée ici.</p>
+          <article class="project-card project-card--featured" aria-labelledby="birdquest-title">
+            <p class="project-status">Projet universitaire</p>
+            <h3 id="birdquest-title">BirdQuest GO</h3>
+            <p class="project-meta">Réalisé en équipe de 5 étudiants · 4 mois · Pour un client</p>
+            <p class="project-description">
+              BirdQuest GO est une application Android qui transforme l’observation des oiseaux en jeu.
+              En mode Exploration, la carte géolocalisée permet de repérer des oiseaux à proximité et
+              d’interagir avec eux grâce à des mini-jeux pour les ajouter à sa collection. Le mode Jardin
+              propose un espace virtuel personnalisable pour découvrir les oiseaux sans se déplacer.
+              Une collection et une encyclopédie des espèces complètent l’expérience.
+            </p>
+            <ul class="project-tech" aria-label="Technologies utilisées">
+              <li>Kotlin</li>
+              <li>Jetpack Compose</li>
+              <li>NestJS</li>
+              <li>Firebase</li>
+            </ul>
+            <div class="project-gallery" aria-label="Captures d’écran de BirdQuest GO">
+              <figure>
+                <img src="images/BirdQuestGO/Map.png" alt="Carte de BirdQuest GO avec la position du joueur et des oiseaux à proximité" loading="lazy">
+                <figcaption>Explorer la carte et repérer les oiseaux proches.</figcaption>
+              </figure>
+              <figure>
+                <img src="images/BirdQuestGO/Jardin.png" alt="Jardin virtuel personnalisable où des oiseaux peuvent se poser" loading="lazy">
+                <figcaption>Aménager son jardin et observer les oiseaux.</figcaption>
+              </figure>
+              <figure>
+                <img src="images/BirdQuestGO/Page_oiseau.png" alt="Fiche d’un oiseau collecté avec son espèce et sa localisation" loading="lazy">
+                <figcaption>Consulter les détails d’un oiseau découvert.</figcaption>
+              </figure>
+              <figure>
+                <img src="images/BirdQuestGO/Page_espece.png" alt="Fiche encyclopédique du Grand Pic avec des informations sur l’espèce" loading="lazy">
+                <figcaption>En apprendre davantage sur les espèces.</figcaption>
+              </figure>
+            </div>
           </article>
           <article class="project-card">
             <p class="project-status">Projet 2</p>
