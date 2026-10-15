@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Présentation détaillée de BirdQuest GO, une application Android de découverte ludique des oiseaux.">
+    <title>BirdQuest GO | Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-name" href="../index.html#accueil">Portfolio</a>
+      <nav aria-label="Navigation principale">
+        <a href="../index.html#projets">Tous les projets</a>
+      </nav>
+    </header>
+
+    <main class="project-detail">
+      <a class="back-link" href="../index.html#projets">← Retour aux projets</a>
+
+      <section class="project-detail-hero" aria-labelledby="project-title">
+        <p class="eyebrow">Projet universitaire · Application Android</p>
+        <h1 id="project-title">BirdQuest GO</h1>
+        <p class="project-meta">Équipe de 5 étudiants · 4 mois · Projet réalisé pour un client</p>
+        <p class="project-lead">
+          Et si une promenade devenait une quête d’observation ? BirdQuest GO transforme la découverte
+          des oiseaux en jeu mobile géolocalisé : on explore son environnement, on repère des oiseaux
+          virtuels, puis on les ajoute à sa collection en réussissant un mini-jeu.
+        </p>
+        <ul class="project-tech" aria-label="Technologies principales">
+          <li>Kotlin</li>
+          <li>Jetpack Compose</li>
+          <li>NestJS</li>
+          <li>Firebase</li>
+        </ul>
+      </section>
+
+      <section class="detail-section" aria-labelledby="concept-title">
+        <div class="detail-copy">
+          <p class="eyebrow">Le concept</p>
+          <h2 id="concept-title">Explorer, observer, collectionner</h2>
+          <p>
+            Le mode Exploration s’appuie sur la localisation du téléphone et une carte interactive
+            pour faire apparaître des oiseaux à proximité. Le joueur peut sélectionner un oiseau
+            atteignable et lancer une séquence de jeu pour tenter de le taguer.
+          </p>
+          <p>
+            Une fois découvert, l’oiseau rejoint la collection. Sa fiche rassemble des informations
+            comme son espèce et sa localisation, tandis que l’encyclopédie permet d’en apprendre
+            davantage sur les espèces rencontrées.
+          </p>
+        </div>
+        <figure class="detail-image">
+          <img src="../images/BirdQuestGO/Map.png" alt="Carte de BirdQuest GO montrant la position du joueur, plusieurs oiseaux et le rayon d’exploration" loading="lazy">
+          <figcaption>Le mode Exploration place les oiseaux virtuels dans l’environnement du joueur.</figcaption>
+        </figure>
+      </section>
+
+      <section class="detail-section detail-section--reverse" aria-labelledby="gameplay-title">
+        <div class="detail-copy">
+          <p class="eyebrow">La boucle de jeu</p>
+          <h2 id="gameplay-title">Un mini-jeu pour approcher l’oiseau</h2>
+          <p>
+            La rencontre ne se limite pas à toucher un marqueur sur la carte. Le joueur observe une
+            séquence, puis doit la mémoriser et la répéter afin de s’approcher de l’oiseau et de le
+            taguer avant qu’il ne s’envole. La proximité est importante : le SRS définit une portée
+            d’interaction maximale de 100 mètres.
+          </p>
+          <p>
+            Si l’oiseau est trop loin, l’application empêche l’interaction. Cette contrainte relie
+            directement la progression du mini-jeu à l’exploration du monde réel.
+          </p>
+        </div>
+        <figure class="detail-image">
+          <img src="../images/BirdQuestGO/Map_oiseau_hors_range.png" alt="Écran du mini-jeu BirdQuest GO invitant à mémoriser une séquence pour taguer un oiseau" loading="lazy">
+          <figcaption>Le mini-jeu met la mémoire au service de la découverte.</figcaption>
+        </figure>
+      </section>
+
+      <section class="detail-section" aria-labelledby="garden-title">
+        <div class="detail-copy">
+          <p class="eyebrow">Un autre rythme</p>
+          <h2 id="garden-title">Un jardin virtuel à personnaliser</h2>
+          <p>
+            Le mode Jardin offre une autre façon de profiter de l’application, sans devoir explorer
+            les alentours. Le joueur peut aménager son espace avec des objets de personnalisation
+            et y accueillir des oiseaux.
+          </p>
+        </div>
+        <figure class="detail-image">
+          <img src="../images/BirdQuestGO/Jardin.png" alt="Jardin virtuel de BirdQuest GO avec des oiseaux, un arbre et des éléments décoratifs" loading="lazy">
+          <figcaption>Le jardin complète l’exploration par un espace personnel.</figcaption>
+        </figure>
+      </section>
+
+      <section class="detail-section detail-section--reverse" aria-labelledby="species-title">
+        <div class="detail-copy">
+          <p class="eyebrow">Apprendre en jouant</p>
+          <h2 id="species-title">Une collection reliée à l’encyclopédie</h2>
+          <p>
+            Chaque rencontre nourrit la collection et encourage à découvrir les espèces. Les fiches
+            de l’encyclopédie présentent notamment leur nom, leur région et des informations
+            naturalistes, pour prolonger la découverte au-delà du jeu.
+          </p>
+        </div>
+        <figure class="detail-image">
+          <img src="../images/BirdQuestGO/Page_espece.png" alt="Fiche encyclopédique du Grand Pic présentant son nom scientifique et des informations sur l’espèce" loading="lazy">
+          <figcaption>Une fiche d’espèce pour associer la collection à l’apprentissage.</figcaption>
+        </figure>
+      </section>
+
+      <section class="detail-section detail-section--stack" aria-labelledby="stack-title">
+        <p class="eyebrow">Architecture documentée</p>
+        <h2 id="stack-title">Une application mobile connectée</h2>
+        <p class="stack-intro">
+          La pile technique ci-dessous est celle décrite dans le SRS du projet.
+        </p>
+        <div class="stack-grid">
+          <article class="stack-card">
+            <h3>Application Android</h3>
+            <p>Kotlin, Jetpack Compose et architecture MVVM pour l’interface et la logique côté mobile.</p>
+          </article>
+          <article class="stack-card">
+            <h3>Serveur et données</h3>
+            <p>NestJS et TypeScript côté serveur, avec Firebase Authentication et Firestore.</p>
+          </article>
+          <article class="stack-card">
+            <h3>Services et persistance</h3>
+            <p>Google Maps, Google Street View, Room et DataStore font partie des outils décrits.</p>
+          </article>
+        </div>
+      </section>
+
+      <a class="project-link project-link--back" href="../index.html#projets">← Revenir au portfolio</a>
+    </main>
+
+    <footer class="site-footer">
+      <p>Portfolio personnel</p>
+    </footer>
+  </body>
+</html>
